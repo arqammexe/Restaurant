@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bella Vista Restaurant - Fine dining experience with exquisite cuisine, elegant ambiance, and exceptional service. Book your table today.">
+    <meta name="keywords" content="restaurant, fine dining, cuisine, food, reservations, elegant dining, gourmet">
+    <meta name="author" content="Bella Vista Restaurant">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bella Vista Restaurant - Fine Dining Experience">
+    <meta property="og:description" content="Experience exquisite cuisine and elegant ambiance at Bella Vista Restaurant">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bellavista-restaurant.com">
+    <meta property="og:image" content="https://bellavista-restaurant.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bella Vista Restaurant - Fine Dining Experience">
+    <meta name="twitter:description" content="Experience exquisite cuisine and elegant ambiance">
+    
+    <title>Bella Vista Restaurant - Fine Dining Experience</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <h2>Bella Vista</h2>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bella Vista</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reservations" class="nav-link">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-aos="fade-up" data-aos-delay="300">Welcome to Bella Vista</h1>
+            <p data-aos="fade-up" data-aos-delay="500">Experience culinary excellence in an atmosphere of refined elegance</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="700">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#reservations" class="btn btn-secondary">Book Table</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Bella Vista</h2>
+                <p>A culinary journey of passion and excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Our Story</h3>
+                    <p>Since 1985, Bella Vista has been a cornerstone of fine dining, combining traditional culinary techniques with innovative flavors. Our commitment to excellence has earned us recognition as one of the city's premier dining destinations.</p>
+                    <p>Led by Executive Chef Marco Antonelli, our kitchen team crafts each dish with meticulous attention to detail, using only the finest locally-sourced ingredients and time-honored recipes passed down through generations.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>38+</h4>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Signature Dishes</p>
+                        </div>
+                        <div class="stat">
+                            <h4>10k+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="images/Interior.jpg" alt="Restaurant Interior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Menu</h2>
+                <p>Exquisite dishes crafted with passion and precision</p>
+            </div>
+            <div class="menu-tabs" data-aos="fade-up" data-aos-delay="200">
+                <button class="tab-btn active" data-tab="appetizers">Appetizers</button>
+                <button class="tab-btn" data-tab="mains">Main Courses</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+                <button class="tab-btn" data-tab="beverages">Beverages</button>
+            </div>
+            <div class="menu-content">
+                <!-- Appetizers -->
+                <div class="tab-content active" id="appetizers">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-image">
+                                <img src="images/Truffle Arancini.jpg" alt="Truffle Arancini" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Truffle Arancini</h4>
+                                    <span class="price">$18</span>
+                                </div>
+                                <p>Crispy risotto balls filled with wild mushrooms and black truffle, served with saffron aioli</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-image">
+                                <img src="images/Burrata Caprese Salad with Prosciutto and Arugula.jpg" alt="Burrata Caprese" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Burrata Caprese</h4>
+                                    <span class="price">$22</span>
+                                </div>
+                                <p>Fresh burrata cheese with heirloom tomatoes, basil oil, and aged balsamic reduction</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-item-image">
+                                <img src="images/76dddb4f-14c5-488d-a9d7-8e7bf1849170.jpg" alt="Tuna Tartare" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Yellowfin Tuna Tartare</h4>
+                                    <span class="price">$26</span>
+                                </div>
+                                <p>Diced yellowfin tuna with avocado, citrus, and sesame, served with crispy wonton chips</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Courses -->
+                <div class="tab-content" id="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-image">
+                                <img src="images/🥩 Wagyu Beef – A Melt-in-Your-Mouth Experience….jpg" alt="Wagyu Beef" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Wagyu Beef Tenderloin</h4>
+                                    <span class="price">$65</span>
+                                </div>
+                                <p>8oz A5 Wagyu beef with roasted bone marrow, seasonal vegetables, and red wine jus</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-image">
+                                <img src="images/Tremendous Lemon Butter Lobster Risotto.jpg" alt="Lobster Risotto" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Lobster Risotto</h4>
+                                    <span class="price">$48</span>
+                                </div>
+                                <p>Creamy Arborio rice with fresh lobster, saffron, and microgreens</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-item-image">
+                                <img src="images/🦆 Crispy Duck Confit with Creamy Roasted Garlic….jpg" alt="Duck Confit" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Duck Confit</h4>
+                                    <span class="price">$42</span>
+                                </div>
+                                <p>Slow-cooked duck leg with cherry gastrique, roasted fingerling potatoes, and wilted spinach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="tab-content" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-image">
+                                <img src="images/Decadent Chocolate Soufflé 🍫✨ Light, airy, and….jpg" alt="Chocolate Soufflé" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Dark Chocolate Soufflé</h4>
+                                    <span class="price">$16</span>
+                                </div>
+                                <p>Warm chocolate soufflé with vanilla bean ice cream and raspberry coulis</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-image">
+                                <img src="images/This Classic Tiramisu is a rich and creamy dessert….jpg" alt="Tiramisu" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Classic Tiramisu</h4>
+                                    <span class="price">$14</span>
+                                </div>
+                                <p>Traditional Italian tiramisu with espresso-soaked ladyfingers and mascarpone</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-item-image">
+                                <img src="images/Gordon Ramsay Creme Brulee Recipe - Chef Ramsay Recipes.jpg" alt="Crème Brûlée" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Vanilla Crème Brûlée</h4>
+                                    <span class="price">$12</span>
+                                </div>
+                                <p>Classic vanilla custard with caramelized sugar and fresh berries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverages -->
+                <div class="tab-content" id="beverages">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-image">
+                                <img src="images/Sancerre Wines 101_ A Sommelier's Guide to Selection, Storage, and Service.jpg" alt="Wine Selection" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Sommelier's Selection</h4>
+                                    <span class="price">$15-85</span>
+                                </div>
+                                <p>Curated wine pairings from renowned vineyards around the world</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-image">
+                                <img src="images/Martini.jpg" alt="Craft Cocktails" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Signature Cocktails</h4>
+                                    <span class="price">$16-22</span>
+                                </div>
+                                <p>Handcrafted cocktails using premium spirits and house-made syrups</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-item-image">
+                                <img src="images/Coffee matters_ Good coffee matters more.jpg" alt="Coffee" loading="lazy">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Artisan Coffee</h4>
+                                    <span class="price">$6-12</span>
+                                </div>
+                                <p>Single-origin coffee beans roasted to perfection, served with artisanal pastries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Make a Reservation</h2>
+                <p>Book your table for an unforgettable dining experience</p>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-info" data-aos="fade-right">
+                    <h3>Reserve Your Table</h3>
+                    <p>Experience the finest in culinary artistry. Our reservation system ensures you have the perfect table waiting for your special occasion.</p>
+                    <div class="reservation-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Flexible Timing</h4>
+                                <p>Choose from lunch or dinner service</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Group Dining</h4>
+                                <p>Perfect for intimate dinners or celebrations</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h4>Special Occasions</h4>
+                                <p>Let us make your celebration memorable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="reservation-form" id="reservation-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="res-name">Full Name</label>
+                        <input type="text" id="res-name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-email">Email Address</label>
+                        <input type="email" id="res-email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-phone">Phone Number</label>
+                        <input type="tel" id="res-phone" name="phone" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Date</label>
+                            <input type="date" id="res-date" name="date" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Time</label>
+                            <select id="res-time" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-guests">Number of Guests</label>
+                        <select id="res-guests" name="guests" required>
+                            <option value="">Select Guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8 Guests</option>
+                            <option value="8+">8+ Guests</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-special">Special Requests</label>
+                        <textarea id="res-special" name="special" rows="4" placeholder="Any special dietary requirements or celebration details..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book Table</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Guests Say</h2>
+                <p>Testimonials from our valued customers</p>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"An absolutely extraordinary dining experience. The attention to detail in every dish is remarkable, and the service is impeccable. Bella Vista has become our go-to restaurant for special occasions."</p>
+                            <div class="testimonial-author">
+                                <div>
+                                    <h4>Sarah</h4>
+                                    <span>Food Critic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The ambiance is sophisticated yet welcoming, and the cuisine is simply outstanding. Chef Marco's creativity shines through in every dish. This is fine dining at its absolute best."</p>
+                            <div class="testimonial-author">
+                          
+                                <div>
+                                    <h4>Chen</h4>
+                                    <span>Business Executive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"From the moment we walked in, we were treated like royalty. The wine pairing was perfect, and every course was a masterpiece. Bella Vista exceeded all our expectations."</p>
+                            <div class="testimonial-author">
+                        
+                                <div>
+                                    <h4>Emmar</h4>
+                                    <span>Travel Blogger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="nav-btn prev-btn" id="prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots" id="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="nav-btn next-btn" id="next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for exclusive offers, new menu items, and special events</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="newsletter-input">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <span class="error-message"></span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Gourmet Street<br>Culinary District, CD 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@bellavista.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Hours</h4>
+                            <p>Mon-Thu: 5:00 PM - 10:00 PM<br>
+                               Fri-Sat: 5:00 PM - 11:00 PM<br>
+                               Sun: 5:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="6" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Google Map -->
+            <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.0059413!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuNCJX!5e0!3m2!1sen!2sus!4v1234567890123"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Bella Vista Restaurant Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Bella Vista</h3>
+                        <p>Experience culinary excellence in an atmosphere of refined elegance</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, CD 12345</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@bellavista.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Opening Hours</h4>
+                    <div class="footer-hours">
+                        <p>Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                        <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                        <p>Sunday: 5:00 PM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bella Vista Restaurant. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
